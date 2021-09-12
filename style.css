@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  background-color: rgb(245, 236, 236);
+}
+.App{
+  height: 100vh;
+  padding-bottom: 20px;
+}
+
+.nav_icons{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 5px;
+  justify-content: space-around;
+  background:linear-gradient(to top, transparent,rgb(143, 142, 142),transparent) ;
+  position: absolute;
+} 
+.icon{
+  padding: 5px;
+  color: #000;
+  font-size: x-large;
+  cursor: pointer;
+} 
+.icon:hover{
+  color: white;
+}
+
+/* header section */
+
+.header{
+  margin:0  5% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.logo{
+  font-weight: bold;
+  background-color: rgb(66, 28, 114);
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+.welcome_message{
+  margin-top: 20px;
+}
+.welcome_message p{
+  color: rgb(139, 134, 134);
+
+}
+.current_balance{
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(116, 184, 116, 0.795);
+}
+.current_balance p:nth-child(1){
+  font-size: 0.8rem;
+}
+.current_balance p:nth-child(2){
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+.account_number{
+  display: flex;
+}
+
+
+
+
+/* cards section */
+
+.all_cards .stat-box{
+  width: 100%;
+  background-color: #0e7691;
+  border-radius: 10px;
+  margin: 5px;
+  color:#fff ;
+  padding:10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.all_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.all_cards .stat-box h2{
+  font-size:3rem;
+  color: rgb(233, 227, 227);
+}
+
+
+.all_cards,.card_header{
+  margin:1px 2% 0 5%;
+}
+.card_header{
+  display: flex;
+  justify-content:space-between;
+}
+.card_header h3{
+  font-size: 1.3rem;
+}
+.back_next{
+  display: flex;
+}
+
+
+.back_next .next,
+.back_next .back{
+  padding: 5px;
+  margin-right: 8px;
+  font-size: larger;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: #ddd;
+}
+
+.two{
+  color: #fff;
+  background: linear-gradient(to bottom left,rgb(224, 179, 53), rgb(226, 91, 29),rgb(58, 58, 161));
+}
+
+.all_cards .account_number{
+  display: flex;
+  justify-content: space-between;
+}
+.all_cards .account_number span{
+  color:#ddd;
+}
+.all_cards .numb{
+ font-weight: bold;
+}
+.all_cards p.amount{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.all_cards .name{
+  font-size: 0.7rem;
+}
+.all_cards .bottom-row{
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.all_cards .bottom-row span{
+  font-size: 1.5rem;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #000;
+  z-index: 1;
+}
+.all_cards .bottom-circle{
+   background-color:rgba(223, 223, 226, 0.884);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+.color{
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+/* transaction table */
+
+.transactionTable{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin:5px 20px 5px  5%;
+
+}
+.transaction-container{
+  width: 100%;
+
+}
+.transactionHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0px 10px 5px 5px;
+}
+.table{
+  background-color: #fff;
+  border-radius: 20px;
+
+}
+.transaction-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.table-icon{
+  background-color: #0e7691;
+  padding: 5px;
+ border-radius: 10px;
+}
+span.date{
+  color: #ccc;
+}
+p.name{
+  font-weight: 450;
+}
+p.amount{
+  font-weight: bolder;
+}
+div.info{
+  margin-right: auto;
+  margin-left: 30px;
+}
+/* .headerTwo */
+
+.headerTwo{
+  width: 100%;
+  margin:0 2%;
+
+
+}
+.headerTwo .firstHalf{
+  width: 100%;
+  padding: 6% 4%;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.advert{
+  border-radius: 20px;
+  margin-top: 1%;
+}
+.headerTwo .top{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.headerTwo .top .send{
+  font-weight: bolder;
+  /* font-size: 1.2rem; */
+}
+.headerTwo .firstHalf input:focus{
+  border-bottom: 3px solid rgb(194, 183, 38);
+}
+.headerTwo button{
+  background-color: rgb(194, 183, 38);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  width: 80%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  margin: 8px 20px;
+}
+.headerTwo button:hover{
+  background-color: #008c8c;
+}
+
+/* .headerThree */
+
+
+.headerThree{
+  width: 100%;
+
+}
+.headerThree .headerThreeContainer{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.headerThree .month{
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.headerThree .goal{
+  margin-top: 27%;
+}
+.headerThree .duration{
+  margin-top: 20%;
+
+}
+.headerThree .progressBar1, .headerThree .progressBar2{
+  margin-top: 10%;
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+  position: relative;
+}
+.headerThree .progressBar1::before,
+.headerThree .progressBar2::before{
+  content: "";
+  width: 40%;
+  height: 5px;
+  background-color: #f00;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.headerThree .progressBar2::before{
+  background-color: yellow;
+  width: 60%;
+}
+.headerThree .headerThreeContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.headerThree .headerThreeBottom{
+  display: flex;
+  justify-content: space-between;
+  padding:5px;
+}
+.headerThree .headerThreeBottom .symbol{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.headerThree .headerThreeBottom .amount{
+  font-weight: bold;
+}
+.headerThree .headerThreeBottom .holdContainer .symbol{
+  background-color: rgb(255, 153, 0);
+}
+.headerThree .headerThreeBottom .holdContainer .income{
+  color:rgb(255, 153, 0); 
+  font-weight: bold;
+}
+.headerThree .headerThreeBottom .incomeContainer .symbol{
+  background-color: rgb(0, 140, 255);
+}
+.headerThree .headerThreeBottom .incomeContainer .income{
+  color:rgb(0, 140, 255); 
+  font-weight: bold;
+}
+
+.headerThree .headerThreeBottom .expenseContainer .symbol{
+    background-color: rgb(56, 177, 56);
+}
+.headerThree .headerThreeBottom .expenseContainer .income{
+  color:rgb(56, 177, 56); 
+  font-weight: bold;
+}
+
+
+/* transaction form */
+.transaction-form{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent ;
+  visibility: hidden;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+}
+.transaction-form  form{
+  width: 30%;
+  background-color: #008c8c;
+}
+
+input::placeholder{
+  color: #fff;
+}
+
+.transaction-form form input{
+  display: block;
+  background-color: transparent;
+  outline: none;
+  width:90%;
+  padding-left: 5px;
+  margin:20px 10px;
+  border: none;
+}
+
+.transaction-form form button{
+  padding: 5px;
+  margin:0 5px 10px 10px;
+  font-weight: bold;
+}
+
+
+
+
+  @media screen  and (max-width:1200px){
+    .all_cards{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .all_cards .stat-box{
+      width: 100%;
+      align-items:center;
+      padding: 10px;
+    }
+    .transactionTable{
+      flex-direction: column;
+    }
+    .nav_icons{
+      background:linear-gradient(to left,
+       transparent,rgb(143, 142, 142),transparent) ;
+    }
+
+    table{
+      width:90%;
+      margin: 0 auto;
+    }
+
+    .welcome_message{
+      margin-top: 30px;
+    }
+    .nav_icons{
+      flex-direction: row;
+      height: auto;
+      width: 100%;
+      padding:5px;
+      top: 0;
+    }
+    .logo{
+      display: none;
+    }
+    .header .welcome_message, .current_balance{
+      margin: 40px 0 10px 0;
+    }
+    .card_header{
+      padding-right: 30px;
+    }
+    .transactionHeader{
+      margin-top: 10px;
+      padding: 0 25px;
+    }
+   .headerTwo, .headerThree{
+     width: 90%;
+     margin: 0 auto;
+   }
+   .transaction-form form{
+     width: 80%;
+     transform:translateY(1000px);
+   }
+  }
+
+
+  @media screen  and (max-width:1024px){
+   
+    .all_cards{
+      grid-template-columns: 1fr 1fr;
+      padding-right: 20px;
+    }
+    
+    .all_cards .stat-box{
+      width: 100%;
+      align-items:center;
+      padding: 10px;
+    }
+    .transactionTable{
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    .nav_icons{
+      background:linear-gradient(to left,
+      transparent,rgb(143, 142, 142),transparent) ;
+    }
+
+    
+    .welcome_message{
+      margin-top: 10px;
+    }
+    .nav_icons{
+      flex-direction: row;
+      height: auto;
+      width: 100%;
+      padding:5px;
+    }
+    .logo{
+      display: none;
+    }
+    
+    .card_header{
+      padding-right: 30px;
+    }
+    .transactionHeader{
+      margin-top: 10px;
+      padding: 10px 45px;
+    }
+    .firstHalf{
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .table{
+      width:95%;
+      margin: 0 auto;
+    }
+  .firstHalf button{
+    padding: 5px;
+  }
+  .advert{
+    height: 300px;
+
+  }
+   .header,.headerThree,.headerTwo{
+     width: 95%;
+     margin: 20px auto 0 auto;
+    }
+   .transaction-form form{
+     width: 80%;
+     transform:translateY(200px);
+   }
+  }
+  
+  
+  @media screen  and (max-width:540px){
+    .button-sections button#btn{
+      padding: 10px;
+      font-size: 1rem;
+    }
+    .transaction-form form{
+      width: 80%;
+      transform:translateY(700px);
+    }
+  }
+  @media screen  and (max-width:540px){
+    .button-sections button#btn{
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+    .transaction-form form{
+      width: 80%;
+      transform:translateY(700px);
+    }
+  }
+      @media screen  and (max-width:480px){
+        .App{
+          padding: 10px;
+        }
+        
+        .all_cards{
+          grid-template-columns: 1fr;
+        }
+        
+        .all_cards .stat-box{
+          width: 100%;
+          align-items:center;
+          padding: 10px;
+        }
+        .transactionTable{
+          flex-direction: column;
+          flex-direction: column-reverse;
+        }
+        .nav_icons{
+          background:linear-gradient(to left,
+           transparent,rgb(143, 142, 142),transparent) ;
+          }
+    
+          .table{
+          width:90%;
+          margin: 0 auto;
+        }
+        .nav_icons{
+          flex-direction: row;
+          height: auto;
+          width: 100%;
+          padding:5px;
+        }
+        .logo,.current_balance{
+          display: none;
+        }
+        .header .welcome_message, .current_balance{
+          margin: 40px 0 20px 0;
+        }
+        .card_header{
+          padding-right: 30px;
+          flex-direction: column;
+        }
+        .back_next{
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 10px;
+        }
+        
+        .firstHalf{
+          width: 90%;
+          margin: 0 auto;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+        .transactionHeader{
+          margin-top: 10px;
+          padding: 0 25px;
+        }
+       .headerTwo, .headerThree{
+         width: 90%;
+         margin: 0 auto;
+       }
+       .transaction-form form{
+         width: 80%;
+         transform:translateY(1200px);
+       }
+      }
