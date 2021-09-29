@@ -263,29 +263,6 @@
         </form>
     </div>
 
-    <script>
-let transaction = document.querySelector('#transaction')
-let app = document.querySelector('.App')
-let btn = document.querySelectorAll('#btn')
-let close = document.querySelector('#close')
-
-
-btn.forEach(function (i) {
-i.addEventListener('click', function (){
-   transaction.style.visibility='visible';
-   app.style.opacity='0.2';
-  })
-});
-
-close.addEventListener('click', function (e){
-    e.preventDefault()
-    transaction.style.visibility='hidden';
-    app.style.opacity='1';
-});
-
-  
-
-    </script>
     
 </body>
 </html>
